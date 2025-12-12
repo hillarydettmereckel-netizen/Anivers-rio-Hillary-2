@@ -1,0 +1,34 @@
+body{
+color: #000;
+background-image: url(https://i.pinimg.com/1200x/63/a7/cd/63a7cdcc953166a3305cb1235dfb8ca0.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-color: rgba(0,0,0,0,4);
+background-blend-mode: darken;
+min-height: 100dvh;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul{
+display: flex;
+justify-content: center;
+list-style: none;
+gap: 270px;
+align-items: center;
+padding: 300px;
+}
+.botao{
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(#57a8a8,#48586f);
+    color: #fff7af;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    box-shadow: none;
+    transition: 0.3s ease;
+}
+.botao:hover{
+    box-shadow: none;
+    transform: translateY(-1dvh);
+}
