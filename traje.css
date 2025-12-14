@@ -8,9 +8,9 @@ body{
 }
 .carousel{
     display: flex;
-    gap: 6dvh;
+    gap: 7dvh;
     overflow-x: auto;
-    padding: 6dvh;
+    padding: 5dvh;
     scroll-snap-type: mandatory;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -19,7 +19,7 @@ body{
     display: none;
 }
 .carousel img{
-    width: 40dvh;
+    width: 25dvh;
     height: auto;
     scroll-snap-align: start;
     flex-shrink: 0;
