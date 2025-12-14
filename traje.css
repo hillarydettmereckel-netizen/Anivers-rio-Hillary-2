@@ -1,0 +1,35 @@
+body{
+    background-image: url(https://i.pinimg.com/1200x/37/18/f3/3718f371e82f9ada6cba388a4d38b358.jpg);
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100dvh;
+}
+.carousel{
+    display: flex;
+    gap: 6dvh;
+    overflow-x: auto;
+    padding: 6dvh;
+    scroll-snap-type: mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.carousel img{
+    width: 40dvh;
+    height: auto;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+h1{
+    font-family: "Great Vibes", cursive;
+    font-size: 10dvh;
+    margin-top: 6dvh;
+    text-align: center;
+    background: -webkit-linear-gradient(#fff7af, #9cc8ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
