@@ -104,7 +104,6 @@ form{
     gap: 2dvh;
     width: 50dvh;
     position: relative;
-    z-index: 2;
 }
 
 input, select{
@@ -123,4 +122,5 @@ button{
     font-size: 3dvh;
     cursor: pointer;
 }
+
 
