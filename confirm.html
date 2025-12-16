@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset= "UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="confirm.css">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  </head>  
-  <body>
-    <h1> Confirmar presença! </h1>
-    <form action="https://formsubmit.co/niver.hillary@gmail.com" method="post">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <select name="presença" required>
-            <option value="">Você irá?</option>
-            <option value="Sim">Sim, estarei presente</option>
-            <option value="Não">Não poderei ir</option>
-      </select>
-      <button type="submit"> Confirmar Presença </button>
-    </form>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="confirm.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="menu-botao">Menu</label>
+
+  <nav>
+    <ul class="menu">
+      <li><a class="botao" href="local.html">Local</a></li>
+      <li><a class="botao" href="confirm.html">Confirmar</a></li>
+      <li><a class="botao" href="traje.html">Traje da festa</a></li>
+      <li><a class="botao" href="presentes.html">Sugestões de presentes</a></li>
+      <li><a class="botao" href="index.html"> Início </a></li>
+    </ul>
+  </nav>
+
+  <h1>Confirmar presença!</h1>
+
+  <form action="https://formsubmit.co/niver.hillary@gmail.com" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+
+    <select name="presenca" required>
+      <option value="">Você irá?</option>
+      <option value="Sim">Sim, estarei presente</option>
+      <option value="Não">Não poderei ir</option>
+    </select>
+
+    <button type="submit">Confirmar presença</button>
+  </form>
+
+</body>
+</html>
