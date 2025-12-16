@@ -1,0 +1,44 @@
+body{
+    background-image: ;
+    background-size: cover;
+    min-width: 100dvh;
+    background-color: rgba(0,0,0,0.3);
+    background-image: url(https://i.pinimg.com/736x/88/fd/ef/88fdef98c3c961cc3067b914e4ad8425.jpg);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10dvh;
+}
+h1{
+    font-family: "Great Vibes", cursive;
+    font-size: 15dvh;
+    text-align: center;
+    background: -webkit-linear-gradient(#fff7ff, #9cc8ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+form{
+    background: rgba(0,0,0,0.5);
+    padding: 4dvh;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2dvh;
+    width: 50dvh
+}
+input,select{
+    padding: 5dvh;
+    border-radius: 16px;
+    border: none;
+    font-size: 4dvh;
+}
+button{
+    padding: 5dvh;
+    border-radius: 16px;
+    border: none;
+    color: #fff7ff;
+    background-color: #214058;
+    font-size: 20px;
+    cursor: pointer;
+}
