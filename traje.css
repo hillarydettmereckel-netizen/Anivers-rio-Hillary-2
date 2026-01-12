@@ -12,11 +12,20 @@ body{
     overflow-x: auto;
     padding: 5dvh;
     scroll-snap-type: mandatory;
-    scrollbar-width: none;
+    scrollbar-width: auto;
     -ms-overflow-style: none;
 }
 .carousel::-webkit-scrollbar{
-    display: none;
+    heigh: 5dvh;
+}
+@media (max-width: 1024px){
+   .carousel{
+      scrollbar-width: none;
+   }
+
+   .carousel::-webkit-scrollbar{
+      display: none;
+   }
 }
 .carousel img{
     width: 25dvh;
@@ -92,6 +101,3 @@ nav{
 .botao:hover{
     transform: translateX(6px);
 }
-
-
-
