@@ -9,18 +9,17 @@
 
 <body>
 
-
   <input type="checkbox" id="menu-toggle">
 
   <label for="menu-toggle" class="menu-botao">Menu</label>
 
   <nav>
     <ul class="menu">
+      <li><a class="botao" href="index.html"> Início </a></li>
       <li><a class="botao" href="local.html">Local</a></li>
       <li><a class="botao" href="confirm.html">Confirmar</a></li>
       <li><a class="botao" href="traje.html">Traje da festa</a></li>
       <li><a class="botao" href="presentes.html">Sugestões de presentes</a></li>
-      <li><a class="botao" href="index.html"> Início </a></li>
     </ul>
   </nav>
 
@@ -28,6 +27,7 @@
 
   <form action="https://formsubmit.co/niver.hillary@gmail.com" method="POST">
     <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="text" name="número" placeholder="Número de Whatsapp">
 
     <select name="presenca" required>
       <option value="">Você irá?</option>
@@ -37,6 +37,28 @@
 
     <button type="submit">Confirmar presença</button>
   </form>
+  <div id="overlay" class="overlay">
+  <div class="mensagem">
+    Presença confirmada! <br>
+    Obrigada por responder ✨
+  </div>
+</div>
+<script>
+const form = document.querySelector("form");
+const overlay = document.getElementById("overlay");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // impede o envio imediato
+
+  overlay.style.display = "flex";
+
+  setTimeout(() => {
+    overlay.style.display = "none";
+    form.submit(); // envia de verdade
+  }, 3000); // 3 segundos
+});
+</script>
+
 
 </body>
 </html>
