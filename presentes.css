@@ -27,7 +27,7 @@ body{
 }
 
 .carousel img{
-width: 40dvh;
+width: 30dvh;
 height: auto;
 scroll-snap-align: start;
 flex-shrink: 0;
@@ -110,4 +110,5 @@ nav{
 
 .botao:hover{
     transform: translateX(6px);
+
 }
