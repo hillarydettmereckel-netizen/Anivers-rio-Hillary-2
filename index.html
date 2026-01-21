@@ -12,7 +12,6 @@
 <body>
 
   <input type="checkbox" id="menu-toggle">
-
   <label for="menu-toggle" class="menu-botao">Menu</label>
 
   <nav>
@@ -24,7 +23,22 @@
       <li><a class="botao" href="presentes.html">Sugestões de presentes</a></li>
     </ul>
   </nav>
-    <h1> Você foi convidado para o aniversário de Hillary Eckel! </h1> 
-    <p> Venha celebrar essa data especial em um lugar totalmente diferente, o país das maravilhas!</p>
+
+  <h1 id="nomePessoa"></h1>
+
+  <p>Venha celebrar essa data especial em um lugar totalmente diferente, o país das maravilhas!</p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nome = params.get("nome");
+
+    document.getElementById("nomePessoa").innerText = 
+      nome 
+      ? `${nome}, você foi convidado(a) para o aniversário de Hillary Eckel! 🎉` 
+      : "Você foi convidado(a) para o aniversário de Hillary Eckel! 🎉";
+  </script>
+
 </body>
 </html>
+
+
